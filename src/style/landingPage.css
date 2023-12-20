@@ -1,0 +1,22 @@
+.landingPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginOption{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    margin: 2rem;
+    padding: 4rem;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    border: 1px  black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+}
+
