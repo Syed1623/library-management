@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path="/adminLogin" element={<AdminLogin/>}></Route>
-          <Route path="/adminPortal" element={<AdminPortal />}></Route>
+          <Route path="/adminPortal/*" element={<AdminPortal />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
