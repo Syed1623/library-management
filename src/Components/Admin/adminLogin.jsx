@@ -13,7 +13,7 @@ const AdminLogin = () => {
             password:12345
         }
         if(ipEmail.current.value == admin.email && ipPassword.current.value == admin.password){
-            console.log("logged in successfully")
+            // console.log("logged in successfully")
             navigate('/adminPortal')
         }else{
             alert("invalid admin credentials")

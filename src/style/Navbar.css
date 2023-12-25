@@ -1,0 +1,13 @@
+.navbar{
+    justify-content: center;
+    padding: 10px;
+}
+.logo{
+    color: greenyellow;
+    margin-right: 30rem;
+}
+.links{
+    text-decoration: none;
+    margin: 2px;
+    color: gray;
+}
