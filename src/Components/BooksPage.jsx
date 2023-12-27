@@ -1,7 +1,9 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation } from 'react-router-dom';
 const BooksPage = () => {
+  const loco = useLocation()
+  const isDelete = loco.pathname.startsWith("/adminPortal")
   const [books, setBooks] = useState([]);
   useEffect(()=>{
     let fetchData = async () => {
@@ -31,7 +33,7 @@ const BooksPage = () => {
               <span>{item.pageCount}</span>
             </div>
               <button className="readBookSubmit"onClick={()=>handleClick(item.id)}>ReadMore</button>
-              <button className="readBookDelete"onClick={()=>handleClick(item.id)}>Delete</button>
+              {isDelete && <button className="readBookDelete"onClick={()=>handleClick(item.id)}>Delete</button>}
             <div>
             </div>
           </div>

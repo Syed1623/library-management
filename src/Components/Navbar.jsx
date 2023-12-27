@@ -26,7 +26,6 @@ const Navbar = () => {
           <Link className='links' to='/adminlogin'>Logout</Link>
           :
           <Link className='links' to='/userLogin'>Logout</Link>}
-        
       </div>
     </div>
   )
