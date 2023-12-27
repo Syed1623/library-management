@@ -1,4 +1,4 @@
-.adminLogin{
+/* .adminLogin{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,4 +26,7 @@ div button{
 button:hover{
     cursor: pointer;
     background-color: darkblue;
+} */
+.adminLogin{
+    margin-top: 12%;
 }

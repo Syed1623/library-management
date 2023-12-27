@@ -10,8 +10,8 @@ const BooksPage = () => {
       setBooks(data);
     };
     fetchData();
-  })
-  let readBook=useNavigate()
+  },[])
+  const readBook=useNavigate()
   function handleClick(id){
     readBook(`/adminPortal/books/${id}`)
   }

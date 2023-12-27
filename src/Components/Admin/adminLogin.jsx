@@ -24,18 +24,18 @@ const AdminLogin = () => {
         ipEmail.current.focus()
     },[])
   return (
-    <div className='adminLogin'>
+    <div className='adminLogin justify-content-center text-center'>
       <h1>Admin Login</h1>
-      <div className="adminForm">
+      <div className="adminForm container-md w-25 p-5 shadow-lg">
         <form action="" onSubmit={handleSubmit}>
-            <div className="adminEmail">
-                <input className='' type="email"  placeholder='Enter your email' ref={ipEmail}/>
+            <div className="adminEmail m-3">
+                <input className='form-control' type="email"  placeholder='Enter your email' ref={ipEmail}/>
             </div>
-            <div className="adminPassword">
-                <input className='' type="password" placeholder='Enter your password' ref={ipPassword}/>
+            <div className="adminPassword m-3">
+                <input className='form-control' type="password" placeholder='Enter your password' ref={ipPassword}/>
             </div>
             <div className="loginBtn">
-                <button className=''>Login</button>
+                <button className='btn btn-primary'>Login</button>
             </div>
         </form>
       </div>
